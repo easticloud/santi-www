@@ -1,0 +1,32 @@
+name: SSG
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+
+      - name: Install && Build
+        run: |
+          npm install
+          npm run ssg
+
+      - name: Github Pages
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: dist
+          FOLDER: dist
+          CLEAN: true
+
+    #   - name: OSS
+    #     uses: manyuanrong/setup-ossutil@v2.0
+    #     with:
+    #       endpoint: "oss-cn-hangzhou.aliyuncs.com"
+    #       access-key-id: ${{secrets.AccessKey_ID}}
+    #       access-key-secret: ${{secrets.Access_Key_Secret}}
+    #   - run: ossutil cp -rf .output/public oss://$bucket/$path
