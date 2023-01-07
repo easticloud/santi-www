@@ -1,1 +1,201 @@
-{}
+{
+    "data": {
+        "name": "数据中心",
+        "list": [
+            {
+                "icon": "data-01.svg",
+                "bg": "data-bg-01.svg",
+                "title": "烟火检测",
+                "button": ["智慧楼宇", "公共安全", "明厨亮灶"]
+            },
+            {
+                "icon": "data-02.svg",
+                "bg": "data-bg-02.svg",
+                "title": "杂物堆积检测",
+                "button": ["公共安全", "智慧楼宇", "智慧园区"]
+            },
+            {
+                "icon": "data-03.svg",
+                "bg": "data-bg-03.svg",
+                "title": "身份识别（非面部）",
+                "button": ["智慧安防", "智慧楼宇", "智慧园区"]
+            },
+            {
+                "icon": "data-04.svg",
+                "bg": "data-bg-04.svg",
+                "title": "安全帽检测",
+                "button": ["智慧安防", "人员检测", "智慧园区"]
+            },
+            {
+                "icon": "data-05.svg",
+                "bg": "data-bg-05.svg",
+                "title": "脱岗检测",
+                "button": ["智慧楼宇", "人员检测", "公共安全"]
+            },
+            {
+                "icon": "data-06.svg",
+                "bg": "data-bg-06.svg",
+                "title": "入侵检测",
+                "button": ["智慧安防", "智慧楼宇", "智慧园区"]
+            },
+            {
+                "icon": "data-07.svg",
+                "bg": "data-bg-07.svg",
+                "title": "摔倒检测",
+                "button": ["智慧安防", "人员检测", "智慧园区"]
+            }
+        ]
+    },
+    "power": {
+        "name": "电力行业",
+        "list": [
+            {
+                "icon": "power-01.svg",
+                "bg": "power-bg-01.svg",
+                "title": "安全帽检测",
+                "button": ["智慧安防", "人员检测", "智慧工地"]
+            },
+            {
+                "icon": "power-02.svg",
+                "bg": "power-bg-02.svg",
+                "title": "工装检测",
+                "button": ["智慧城市", "人员检测", "智慧工地"]
+            },
+            {
+                "icon": "power-03.svg",
+                "bg": "power-bg-03.svg",
+                "title": "违规行为检测",
+                "button": ["智慧安防", "智慧城市", "智慧工地"]
+            },
+            {
+                "icon": "power-04.svg",
+                "bg": "power-bg-04.svg",
+                "title": "烟火检测",
+                "button": ["智慧安防", "公共安全", "明厨亮灶"]
+            }
+        ]
+    },
+    "smart": {
+        "name": "智慧社区",
+        "list": [
+            {
+                "icon": "smart-01.svg",
+                "bg": "smart-bg-01.svg",
+                "title": "消防通道检测",
+                "button": ["智慧楼宇", "公共安全", "智慧园区"]
+            },
+            {
+                "icon": "smart-02.svg",
+                "bg": "smart-bg-02.svg",
+                "title": "烟火检测",
+                "button": ["智慧楼宇", "公共安全", "明厨亮灶"]
+            },
+            {
+                "icon": "smart-03.svg",
+                "bg": "smart-bg-03.svg",
+                "title": "车辆违停检测",
+                "button": ["智慧交通", "智慧城管", "智慧园区"]
+            },
+            {
+                "icon": "smart-04.svg",
+                "bg": "smart-bg-04.svg",
+                "title": "高空抛物检测",
+                "button": ["智慧安防", "智慧楼宇", "公共安全"]
+            },
+            {
+                "icon": "smart-05.svg",
+                "bg": "smart-bg-05.svg",
+                "title": "攀爬检测",
+                "button": ["智慧安防", "公共安全", "智慧园区"]
+            }
+        ]
+    },
+    "government": {
+        "name": "政务中心",
+        "list": [
+            {
+                "icon": "government-01.svg",
+                "bg": "government-bg-01.svg",
+                "title": "佩戴口罩检测",
+                "button": ["智慧城市", "人员检测", "明厨亮灶"]
+            },
+            {
+                "icon": "government-02.svg",
+                "bg": "government-bg-02.svg",
+                "title": "吸烟检测",
+                "button": ["智慧安防", "公共安全", "明厨亮灶"]
+            },
+            {
+                "icon": "government-03.svg",
+                "bg": "government-bg-03.svg",
+                "title": "玩手机检测",
+                "button": ["智慧安防", "智慧楼宇", "玩手机识别"]
+            },
+            {
+                "icon": "government-04.svg",
+                "bg": "government-bg-04.svg",
+                "title": "工作人员着装检测",
+                "button": ["智慧安防", "人员检测", "智慧楼宇"]
+            },
+            {
+                "icon": "government-05.svg",
+                "bg": "government-bg-05.svg",
+                "title": "跌倒检测",
+                "button": ["智慧安防", "公共安全", "智慧园区"]
+            },
+            {
+                "icon": "government-06.svg",
+                "bg": "government-bg-06.svg",
+                "title": "在岗人数检测",
+                "button": ["智慧安防", "公共安全", "智慧园区"]
+            },
+            {
+                "icon": "government-07.svg",
+                "bg": "government-bg-07.svg",
+                "title": "脱岗检测",
+                "button": ["智慧楼宇", "人员检测", "公共安全"]
+            }
+        ]
+    },
+    "energy": {
+        "name": "能源化工",
+        "list": [
+            {
+                "icon": "energy-01.svg",
+                "bg": "energy-bg-01.svg",
+                "title": "禁入区检测",
+                "button": ["智慧安防", "智慧工地", "智慧园区"]
+            },
+            {
+                "icon": "energy-02.svg",
+                "bg": "energy-bg-02.svg",
+                "title": "跑动检测",
+                "button": ["智慧安防", "公共安全", "智慧园区"]
+            },
+            {
+                "icon": "energy-03.svg",
+                "bg": "energy-bg-03.svg",
+                "title": "烟雾识别预警",
+                "button": ["智慧工业", "明厨亮灶", "智慧工地"]
+            },
+            {
+                "icon": "energy-04.svg",
+                "bg": "energy-bg-04.svg",
+                "title": "穿戴检测",
+                "button": ["智慧安防", "人员检测", "智慧工地"]
+            },
+            {
+                "icon": "energy-05.svg",
+                "bg": "energy-bg-05.svg",
+                "title": "人车道检测",
+                "button": ["智慧安防", "公共安全", "智慧园区"]
+            },
+            {
+                "icon": "energy-06.svg",
+                "bg": "energy-bg-06.svg",
+                "title": "中控室检测",
+                "button": ["智慧楼宇", "人员检测", "公共安全"]
+            }
+        ]
+    }
+}

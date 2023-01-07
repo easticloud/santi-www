@@ -1,21 +1,30 @@
 <template>
-<div class="m-item-tabs">Nuxt2 boilerplate</div>
+    <div class="m-item-tabs">
+        <div class="tabs wp">
+            <span
+                class="item"
+                :class="{ active: active == item }"
+                v-for="item in data"
+                :key="item"
+                @click="change(item)"
+            >
+                {{ item }}
+            </span>
+        </div>
+    </div>
 </template>
 <script>
 export default {
-    data() {
-        return {
-        };
-    },
-    async asyncData({ params }) {
-        return {};
-    },
-    computed: {
-    },
+    props: ["data", "active"],
+    emits: ["update"],
     methods: {
+        change(item) {
+            this.$emit("update", item);
+        },
     },
 };
 </script>
 
 <style lang="less">
+@import "~@/assets/css/components/tabs.less";
 </style>

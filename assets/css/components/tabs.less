@@ -1,0 +1,34 @@
+.m-item-tabs {
+    .size(100%,100px);
+    border-bottom: 1px solid #dcdcdc;
+    .wp {
+        .flex;
+        .h(100%);
+        align-items: center;
+        justify-content: space-between;
+    }
+    .tabs {
+        .item {
+            .pointer;
+            .fz(24px,31px);
+            .h(100%);
+            .flex;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+            position: relative;
+            color: #666;
+            &.active,
+            &:hover {
+                color: #222;
+                &::after {
+                    .pa;
+                    .lb(0,-1px);
+                    content: "";
+                    .size(100%,2px);
+                    background-color: #222;
+                }
+            }
+        }
+    }
+}
