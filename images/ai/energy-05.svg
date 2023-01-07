@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>人车道</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.862745 0 0 0 0 0.862745 0 0 0 0 0.862745 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="三体官网-算法商场" transform="translate(-387.000000, -3158.000000)">
+            <g id="编组-8备份-4" transform="translate(360.000000, 2828.000000)">
+                <g id="人车道" transform="translate(0.000000, 297.000000)" filter="url(#filter-1)">
+                    <g transform="translate(27.000000, 33.000000)">
+                        <rect id="矩形" fill="#000000" fill-rule="nonzero" opacity="0" x="0" y="0" width="50" height="50"></rect>
+                        <path d="M15,36.975 L19,37 L19,34 L15,34 L15,36.975 Z M22,36.975 L26,37 L26,34 L22,34 L22,36.975 Z M29,36.975 L33,37 L33,34 L29.0248447,34 L29,36.975 Z M37.21,39.4963504 L37.21,43 L47,43 L33.932,15.8905109 L32.458,15.8905109 L32.458,8.75182482 C32.458,7.78832117 31.666,7 30.698,7 L19.302,7 C18.334,7 17.542,7.78832117 17.542,8.75182482 L17.542,15.8905109 L16.068,15.8905109 L3,43 L12.79,43 L12.79,39.4963504 L8.588,39.4963504 L9.996,36.5620438 L12.13,36.5620438 L12.13,33.9343066 L11.272,33.9343066 L18.29,19.3941606 L31.71,19.3941606 L38.728,33.9343066 L36.77,33.9343066 L36.77,36.5620438 L40.004,36.5620438 L41.412,39.4963504 L37.21,39.4963504 Z M20,10 L30,10 L30,16 L20,16 L20,10 Z" id="形状" fill="#000000" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
