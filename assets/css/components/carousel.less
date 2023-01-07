@@ -1,0 +1,48 @@
+.m-index-carousel {
+    @h: 630px;
+    .u-link {
+        .db;
+        .h(@h);
+        background-size: auto @h;
+        background-repeat: no-repeat;
+        background-position: center center;
+        &.u-link-1 {
+            background-image: url("@{img}banner/01.jpg");
+        }
+        &.u-link-2 {
+            background-image: url("@{img}banner/02.jpg");
+        }
+        &.u-link-3 {
+            background-image: url("@{img}banner/03.jpg");
+        }
+    }
+    .el-carousel__container {
+        .h(@h);
+    }
+    .box {
+        .flex;
+        .h(100%);
+        flex-direction: column;
+        justify-content: center;
+        color: #fff;
+        .title {
+            .fz(48px,64px);
+            letter-spacing: 3px;
+        }
+        .desc {
+            .fz(21px,27px);
+            .mt(25px);
+        }
+        .button {
+            .size(160px,45px);
+            .r(25px);
+            .flex;
+            .mt(45px);
+            letter-spacing: 2px;
+            color: #222;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(360deg, #f2f2f2 0%, #ffffff 100%);
+        }
+    }
+}

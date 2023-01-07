@@ -1,0 +1,80 @@
+.m-index-ai {
+    .pt(80px);
+    .wp {
+        .flex;
+    }
+    .box {
+        .flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        .item {
+            .flex;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+        .item + .item {
+            .mt(190px);
+        }
+        .name {
+            .fz(24px,31px);
+        }
+        .icon {
+            .size(51px);
+        }
+        &.box-1 {
+            .item:first-child {
+                .mr(20px);
+            }
+        }
+        &.box-2 {
+            .item {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 0;
+            }
+            .name {
+                .fz(32px,42px);
+            }
+            .icon {
+                .size(567px);
+            }
+        }
+        &.box-3 {
+            align-items: flex-start;
+            .item:first-child {
+                .ml(20px);
+            }
+            .name {
+                order: 1;
+            }
+        }
+    }
+    .devices {
+        .mt(54px);
+        .size(100%,295px);
+        background-color: #fff;
+        .wp {
+            .flex;
+            .h(100%);
+            justify-content: center;
+            align-items: center;
+            gap: 220px;
+        }
+        .item {
+            .flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+            .name {
+                .fz(24px,31px);
+            }
+            .icon {
+                .size(85px);
+            }
+        }
+    }
+}

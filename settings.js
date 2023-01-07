@@ -1,6 +1,6 @@
 module.exports = {
     // SEO
-    title: "title",
+    title: "三体官网",
     description: "desc",
 
     // URL

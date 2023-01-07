@@ -1,5 +1,5 @@
 <template>
-<div class="m-index-test">Nuxt2 boilerplate</div>
+<div class="m-item-programs">方案</div>
 </template>
 <script>
 export default {
