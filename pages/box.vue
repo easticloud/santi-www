@@ -6,6 +6,12 @@
         <client-only>
             <!-- 轮播 -->
             <index-carousel></index-carousel>
+            <!-- tabs -->
+            <!-- 产品介绍 -->
+            <!-- 产品图例 -->
+            <!-- 核心功能 -->
+            <!-- 产品优势 -->
+            <!-- 应用场景 -->
         </client-only>
 
         <!-- 公共底部 -->
@@ -14,6 +20,7 @@
 </template>
 
 <script>
+import { figure, core, products, scenes } from "@/assets/data/box.json";
 export default {
     name: "IndexBox",
     data() {
