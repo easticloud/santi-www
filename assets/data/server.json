@@ -1,1 +1,53 @@
-{}
+{
+    "info": {
+        "title": "产品介绍",
+        "label": "三体AI边缘计算服务器",
+        "desc": "三体AI边缘计算服务器可搭载30颗TPU芯片BM1684，INT8算力高达528TOPS，支持28800fps 1080P高清视频硬件解码与1500fps 1080P高清视频硬件编码。"
+    },
+    "figure": {
+        "title": "产品图例",
+        "list": ["server/figure-01.svg", "server/figure-02.svg"]
+    },
+    "core": {
+        "title": "功能优势",
+        "list": [
+            {
+                "icon": "server/core-01.svg",
+                "title": "强劲算力",
+                "desc": "支持高达528TOPS的INT8算力或66TFLOPS的FP32算力。"
+            },
+            {
+                "icon": "server/core-02.svg",
+                "title": "超强性能",
+                "desc": "960路高清视频硬件解码能力、60路高清视频硬件编码能力，视频及图片解码分辨率高达 8K 以上。"
+            },
+            {
+                "icon": "server/core-03.svg",
+                "title": "拓展灵活",
+                "desc": "存储支持8个2.5”前置热插拔硬盘槽位，10个PCIE3.0扩展槽位，8个DDR4内存槽位，最大容量支持1TB。"
+            },
+            {
+                "icon": "server/core-04.svg",
+                "title": "兼容性强",
+                "desc": "AMD EPYC X86处理器平台，支持RESTful/IPMI管理接口。"
+            }
+        ]
+    },
+    "scenes": {
+        "title": "应用场景",
+        "list": [
+            {
+                "bg": "server/scenes-01.svg",
+                "direction": "left",
+                "label": "应用广泛、场景丰富",
+                "desc": "适配众多合作伙伴多种智能算法，完美支持人脸识别、车辆识别、物品识别、视频结构化、行为分析等智能分析应用"
+            },
+            {
+                "bg": "server/scenes-02.svg",
+                "direction": "right",
+                "label": "易用便捷、全栈高效",
+                "desc": "一站式工具包，提供底层驱动环境、编译器、推理部署工具等一系列软件工具。易用便捷，涵盖了神经网络推理阶段所需的模型优化、高效运行时支持等能力，为深度学习应用开发和部署提供易用、高效的全栈式解决方案。最大程度降低算法和软件的开发周期和成本，使用者能快速在算丰各系列AI硬件产品上部署深度学习算法，便捷实现智能应用"
+            }
+        ]
+    }
+}
