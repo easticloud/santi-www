@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="65px" height="65px" viewBox="0 0 65 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>技术支持</title>
+    <defs>
+        <linearGradient x1="25.6077881%" y1="11.6933594%" x2="73.7611084%" y2="82.6867676%" id="linearGradient-1">
+            <stop stop-color="#C6CFFF" offset="0%"></stop>
+            <stop stop-color="#EED8FF" offset="99.993427%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="65" height="65" rx="32.5"></rect>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="三体官网-关于我们" transform="translate(-519.000000, -1440.000000)">
+            <g id="编组-8备份-2" transform="translate(359.000000, 1317.000000)">
+                <g id="编组-3" transform="translate(0.000000, 91.000000)">
+                    <g id="技术支持" transform="translate(160.000000, 32.000000)">
+                        <mask id="mask-3" fill="white">
+                            <use xlink:href="#path-2"></use>
+                        </mask>
+                        <use id="蒙版" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                        <g id="技术服务" mask="url(#mask-3)" fill-rule="nonzero">
+                            <g transform="translate(13.000000, 13.000000)">
+                                <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="40" height="40"></rect>
+                                <path d="M29.3341441,31.5276576 L29.3341441,33.9600901 L9.95495496,33.9600901 L9.95495496,31.5276576 L29.3341441,31.5276576 Z M34.5833333,7.08333332 L34.5833333,27.3536036 L4.58333332,27.3536036 L4.58333332,7.08333332 L34.5833333,7.08333332 Z M32.1509009,9.51576575 L7.01576575,9.51576575 L7.01576575,24.9211712 L32.1509009,24.9211712 L32.1509009,9.51576575 Z M15.7173874,12.3454955 L17.4379279,14.0644144 L14.2838739,17.2184685 L17.4379279,20.3725225 L15.7173874,22.0914414 L10.8444144,17.2184685 L15.7173874,12.3454955 Z M23.4492793,12.3454955 L28.3222522,17.2184685 L23.4492793,22.0914414 L21.7287387,20.3725225 L24.8827928,17.2184685 L21.7287387,14.0644144 L23.4492793,12.3454955 Z" id="形状" fill="#FFFFFF"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="65px" height="65px" viewBox="0 0 65 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>客户备案</title>
+    <defs>
+        <linearGradient x1="25.6077881%" y1="11.6933594%" x2="73.7611084%" y2="82.6867676%" id="linearGradient-1">
+            <stop stop-color="#C6CFFF" offset="0%"></stop>
+            <stop stop-color="#EED8FF" offset="99.993427%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="65" height="65" rx="32.5"></rect>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="三体官网-关于我们" transform="translate(-519.000000, -1730.000000)">
+            <g id="编组-8备份-2" transform="translate(359.000000, 1317.000000)">
+                <g id="编组-3备份-3" transform="translate(0.000000, 381.000000)">
+                    <g id="客户备案" transform="translate(160.000000, 32.000000)">
+                        <mask id="mask-3" fill="white">
+                            <use xlink:href="#path-2"></use>
+                        </mask>
+                        <use id="蒙版" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                        <g id="备案" mask="url(#mask-3)">
+                            <g transform="translate(13.000000, 12.000000)">
+                                <rect id="矩形" fill="#000000" fill-rule="nonzero" opacity="0" x="0" y="0" width="40" height="40"></rect>
+                                <g id="编组-15" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(5.000000, 4.000000)">
+                                    <path d="M14.7474747,32.3232323 C20.8080808,29.8989899 24.8484848,26.4646464 26.8686868,22.2222222 C29.4949495,17.1717172 30.1010101,11.3131313 28.8888889,4.44444442 L14.7474747,-6.45947942e-15 L0.6060606,4.64646463 C-0.6060606,11.3131313 -3.21496446e-09,17.1717172 2.42424242,22.2222222 C4.64646465,26.4646464 8.68686866,29.8989899 14.7474747,32.3232323 Z M4.24242424,21.4141414 C2.02020201,16.969697 1.41414139,11.9191919 2.42424242,6.06060607 L14.7474747,2.02020202 L27.070707,6.06060607 C27.8787879,11.9191919 27.2727273,16.969697 25.050505,21.2121212 C23.2323232,24.8484848 19.7979798,27.6767676 14.7474747,29.8989899 C9.49494949,27.8787879 6.06060605,24.8484848 4.24242424,21.4141414 L4.24242424,21.4141414 Z" id="形状" fill="#FFFFFF" fill-rule="nonzero"></path>
+                                    <polygon id="路径" fill="#FFFFFF" fill-rule="nonzero" points="14.7474747 20.4040404 7.87878787 13.5353535 9.49494949 12.1212121 14.7474747 17.3737374 22.020202 10.1010101 23.6363636 11.5151515"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
