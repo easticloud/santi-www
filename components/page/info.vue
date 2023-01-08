@@ -23,9 +23,11 @@ export default {
     .label {
         .flex;
         .fz(21px,27px);
+        gap:3px;
         align-items: center;
         .icon {
             .size(25px);
+            .pb(4px);
         }
     }
     .desc {

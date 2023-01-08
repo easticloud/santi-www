@@ -1,6 +1,14 @@
 .m-item-tabs {
     .size(100%,100px);
     border-bottom: 1px solid #dcdcdc;
+    background-color: #fff;
+    &.background {
+        background-color: transparent;
+        border-bottom: none;
+        .wp {
+            border-bottom: 1px solid #dcdcdc;
+        }
+    }
     .wp {
         .flex;
         .h(100%);

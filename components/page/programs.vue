@@ -44,7 +44,7 @@ export default {
     .box {
         .flex;
         flex-direction: column;
-        padding: 30px 30px 0 30px;
+        padding: 35px 30px;
         box-sizing: border-box;
         gap: 26px;
         .title {

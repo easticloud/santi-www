@@ -1,5 +1,5 @@
 <template>
-    <div class="m-item-tabs">
+    <div class="m-item-tabs" :class="{ background }">
         <div class="tabs wp">
             <span
                 class="item"
@@ -15,7 +15,7 @@
 </template>
 <script>
 export default {
-    props: ["data", "active"],
+    props: ["data", "active", "background"],
     emits: ["update"],
     methods: {
         change(item) {

@@ -12,7 +12,7 @@
             <div v-for="(item, key) in box" :key="key" :id="key">
                 <page-title :data="{ title: item.title }"></page-title>
                 <template v-if="key == 'scenes'">
-                    <page-tabs :data="scenesTabs" :active="scenes" @update="showItem"></page-tabs>
+                    <page-tabs :data="scenesTabs" :active="scenes" @update="showItem" :background="true"></page-tabs>
                     <page-scenes :data="scenesItem"></page-scenes>
                 </template>
                 <template v-else>

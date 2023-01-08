@@ -17,6 +17,7 @@ export default {
 <style lang="less">
 .m-item-figure {
     .size(590px,250px);
+    .r(5px);
     background-size: 590px 250px;
     background-repeat: no-repeat;
     background-position: top center;
