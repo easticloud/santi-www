@@ -1,21 +1,25 @@
 <template>
-<div class="m-item-figure">图例</div>
+    <div class="m-item-figure" :style="style(data)"></div>
 </template>
 <script>
 export default {
-    data() {
-        return {
-        };
-    },
-    async asyncData({ params }) {
-        return {};
-    },
-    computed: {
-    },
+    props: ["data"],
     methods: {
+        style(data) {
+            return {
+                backgroundImage: `url(${require(`../../static/images/${data}`)})`,
+            };
+        },
     },
 };
 </script>
 
 <style lang="less">
+.m-item-figure {
+    .size(590px,250px);
+    background-size: 590px 250px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: #fff;
+}
 </style>

@@ -12,7 +12,7 @@ export default {
     props: ["data"],
     methods: {
         showImg(link) {
-            return require(`../../static/images/ai/${link}`);
+            return require(`../../static/images/${link}`);
         },
         style(link) {
             return {

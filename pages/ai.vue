@@ -7,14 +7,13 @@
             <!-- 轮播 -->
             <index-carousel></index-carousel>
             <page-tabs :data="tabs" :active="active" @update="update"></page-tabs>
-            <div class="m-content">
-                <page-title :data="{ title: active }"></page-title>
-                <div class="wp" v-if="changeTab">
-                    <page-example v-for="(item, i) in changeTab.list" :key="i" :data="item"></page-example>
+            <div class="m-content" v-for="(item, key) in ai" :key="key" :id="key">
+                <page-title :data="{ title: item.title }"></page-title>
+                <div class="wp">
+                    <page-example v-for="(example, i) in item.list" :key="i" :data="example"></page-example>
                 </div>
             </div>
         </client-only>
-
         <!-- 公共底部 -->
         <common-footer></common-footer>
     </div>
@@ -32,15 +31,17 @@ export default {
     },
     computed: {
         tabs() {
-            return Object.values(this.ai).map((item) => item.name);
-        },
-        changeTab() {
-            return Object.values(this.ai).filter((item) => item.name == this.active)[0];
+            return Object.values(this.ai).map((item) => item.title);
         },
     },
     methods: {
-        update(key) {
-            this.active = key;
+        update(name) {
+            this.active = name;
+            let _name = "";
+            for (const key in this.ai) {
+                if (this.ai[key].title == name) _name = key;
+            }
+            document.getElementById(_name).scrollIntoView();
         },
     },
     mounted() {

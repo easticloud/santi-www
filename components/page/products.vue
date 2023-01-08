@@ -1,5 +1,5 @@
 <template>
-<div class="m-item-introduction">介绍</div>
+<div class="m-item-products">介绍</div>
 </template>
 <script>
 export default {

@@ -11,36 +11,36 @@
             "title": "AI算法商城",
             "desc": "打造丰富多样的算力模型，加速行业场景数字化升级",
             "link": "",
-            "img": "ai.jpg"
+            "img": "index/ai.jpg"
         },
         {
             "title": "三体AI边缘计算盒",
             "desc": "最大可支持32路摄像头接入，内置数十种AI算法",
             "link": "",
-            "img": "box.jpg"
+            "img": "index/box.jpg"
         },
         {
             "title": "让科技更简单<br/>让生活更智能",
             "desc": "用突破性的技术，解决社会和商业中的棘手问题",
             "link": "",
-            "img": "more.jpg"
+            "img": "index/more.jpg"
         }
     ],
     "ai": {
         "box-1": [
-            { "icon": "ai-01.svg", "name": "AI视觉计算中枢" },
-            { "icon": "ai-03.svg", "name": "AI智能推理应用平台" }
+            { "icon": "index/ai-01.svg", "name": "AI视觉计算中枢" },
+            { "icon": "index/ai-03.svg", "name": "AI智能推理应用平台" }
         ],
-        "box-2": [{ "icon": "ai.svg", "name": "全栈AI技术" }],
+        "box-2": [{ "icon": "index/ai.svg", "name": "全栈AI技术" }],
         "box-3": [
-            { "icon": "ai-02.svg", "name": "AI智能自动训练平台" },
-            { "icon": "ai-04.svg", "name": "AI算法仓" }
+            { "icon": "index/ai-02.svg", "name": "AI智能自动训练平台" },
+            { "icon": "index/ai-04.svg", "name": "AI算法仓" }
         ]
     },
     "ai_devices": [
-        { "icon": "ai-05.svg", "name": "AI训练服务器" },
-        { "icon": "ai-06.svg", "name": "前端摄像头" },
-        { "icon": "ai-07.svg", "name": "AI边缘智能终端" }
+        { "icon": "index/ai-05.svg", "name": "AI训练服务器" },
+        { "icon": "index/ai-06.svg", "name": "前端摄像头" },
+        { "icon": "index/ai-07.svg", "name": "AI边缘智能终端" }
     ],
     "industry": {
         "title": "AI赋能行业",
