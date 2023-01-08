@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="45px" height="45px" viewBox="0 0 45 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>拓展灵活</title>
+    <defs>
+        <linearGradient x1="25.6077881%" y1="11.6933594%" x2="73.7611084%" y2="82.6867676%" id="linearGradient-1">
+            <stop stop-color="#C6CFFF" offset="0%"></stop>
+            <stop stop-color="#EED8FF" offset="99.993427%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="45" height="45" rx="22.5"></rect>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="三体官网-核心产品-AI边缘计算服务器" transform="translate(-421.000000, -1914.000000)">
+            <g id="编组-8备份-3" transform="translate(361.000000, 1575.000000)">
+                <g id="编组-6备份-2" transform="translate(0.000000, 292.000000)">
+                    <g id="拓展灵活" transform="translate(60.000000, 47.000000)">
+                        <mask id="mask-3" fill="white">
+                            <use xlink:href="#path-2"></use>
+                        </mask>
+                        <use id="蒙版" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                        <g id="拓展" mask="url(#mask-3)" fill="#FFFFFF" fill-rule="nonzero">
+                            <g transform="translate(11.000000, 11.000000)" id="形状">
+                                <path d="M11.5,22.9889706 C5.16498162,22.9889706 0.0110294118,17.8350902 0.0110294118,11.5 C0.0110294118,5.16498162 5.16498162,0.0110294118 11.5,0.0110294118 C17.8350902,0.0110294118 22.9889706,5.16498162 22.9889706,11.5 C22.9889706,17.8350902 17.8350902,22.9889706 11.5,22.9889706 Z M11.5,2.1652114 C6.35279756,2.1652114 2.1652114,6.35279756 2.1652114,11.5 C2.1652114,16.6472742 6.35279756,20.8347886 11.5,20.8347886 C16.6472742,20.8347886 20.8347886,16.6472742 20.8347886,11.5 C20.8347886,6.35279756 16.6472742,2.1652114 11.5,2.1652114 Z"></path>
+                                <path d="M17.0246869,11.5 L14.8705049,11.5 L14.8705049,8.12942325 L11.5,8.12942325 L11.5,5.97524127 L17.0246869,5.97524127 L17.0246869,11.5 Z M11.5,17.0247587 L5.97524127,17.0247587 L5.97524127,11.5 L8.12942325,11.5 L8.12942325,14.8705767 L11.5,14.8705767 L11.5,17.0247587 Z"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
