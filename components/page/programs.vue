@@ -1,21 +1,86 @@
 <template>
-<div class="m-item-programs">方案</div>
+    <div class="m-item-programs wp">
+        <img :src="require(`../../static/images/${data.img}`)" class="img" />
+        <div class="box">
+            <span class="title">{{ data.title }}</span>
+            <div class="item" v-for="(item, i) in list" :key="i">
+                <div class="label">
+                    <img src="../../static/images/programs/icon.svg" class="icon" />
+                    {{ item.title }}
+                </div>
+                <span class="desc" v-if="item.desc">{{ item.desc }}</span>
+                <div class="list" v-if="item.list">
+                    <span class="u-list" v-for="(list, key) in item.list" :key="key">
+                        <img src="../../static/images/programs/dot.svg" class="dot" />
+                        {{ list }}
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
 </template>
 <script>
 export default {
-    data() {
-        return {
-        };
-    },
-    async asyncData({ params }) {
-        return {};
-    },
+    props: ["data"],
     computed: {
-    },
-    methods: {
+        list() {
+            return this.data.list || [];
+        },
     },
 };
 </script>
 
 <style lang="less">
+.m-item-programs {
+    .flex;
+    .r(5px);
+    .clip;
+    .size(676px,auto);
+    min-height: 635px;
+    background-color: #fff;
+    .img {
+        .size(676px,635px);
+    }
+    .box {
+        .flex;
+        flex-direction: column;
+        padding: 30px 30px 0 30px;
+        box-sizing: border-box;
+        gap: 26px;
+        .title {
+            .fz(21px,27px);
+        }
+        .item {
+            .flex;
+            flex-direction: column;
+            gap: 13px;
+            .label {
+                .flex;
+                align-items: center;
+                gap: 10px;
+                .icon {
+                    .size(30px);
+                }
+            }
+            .desc,
+            .list {
+                .fz(16px,22px);
+                color: #888;
+            }
+            .list {
+                .flex;
+                flex-direction: column;
+                gap: 10px;
+                .u-list {
+                    .flex;
+                    gap: 10px;
+                    align-items: baseline;
+                    .dot {
+                        .size(8px);
+                    }
+                }
+            }
+        }
+    }
+}
 </style>
