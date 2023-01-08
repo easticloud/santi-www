@@ -1,0 +1,99 @@
+.m-item-contact {
+    .m-form {
+        .flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 40px; 
+        .m-item {
+            .pr;
+            min-width: 100%;
+            flex: 1;
+            .u-label {
+                .db;
+                .fz(20px,1.5);
+                .color(#3c3c3c);
+                .mb(10px);
+            }
+            .u-input,
+            .u-textarea {
+                .flex;
+                .r(5px);
+                .clip;
+                box-sizing: border-box;
+                background: #fafbff;
+                border: 1px solid #e1e6f1;
+                align-items: center;
+                transition: 0.15s ease-in-out;
+                input,
+                textarea {
+                    .full;
+                    border: 0;
+                    background-color: transparent;
+                }
+                &.err {
+                    border: 1px solid #f00;
+                }
+            }
+            .u-input {
+                .size(100%,65px);
+                .u-icon {
+                    margin: 0 10px 0 20px;
+                }
+                .u-desc {
+                    .fz(18px);
+                    .color(#374567);
+                    .mr(10px);
+                    opacity: 0.5;
+                }
+                input {
+                    .lh(65px);
+                    .fz(18px,65px);
+                }
+            }
+            .u-textarea {
+                .flex;
+                align-items: flex-start;
+                padding: 10px 20px;
+                min-height: 108px;
+                .u-icon {
+                    .size(20px);
+                    margin: 8px 10px 0 0;
+                }
+                textarea {
+                    .h(108px);
+                    .fz(18px,2);
+                }
+            }
+            &.m-row {
+                min-width: 48%;
+            }
+            .u-err {
+                .color(red);
+                .fz(13px);
+                .pa;
+                .lb(0, -24px);
+            }
+        }
+    }
+    .m-btns {
+        .flex;
+        margin: 25px 0 50px 0;
+        gap: 50px;
+        justify-content: center;
+        .u-btn {
+            .x;
+            .pointer;
+            .size(180px,65px);
+            .r(5px);
+            .fz(18px,65px);
+            box-sizing: border-box;
+            background: #fafbff;
+            border: 1px solid #e1e6f1;
+            color: #666;
+            &.u-submit {
+                color: #222;
+                background: linear-gradient(146deg, #c6cfff 0%, #eed8ff 100%);
+            }
+        }
+    }
+}

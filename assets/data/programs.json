@@ -4,6 +4,7 @@
         "info": {
             "title": "数据中心解决方案",
             "img": "programs/01.png",
+            "width":"676px",
             "list": [
                 {
                     "title": "业务痛点",
@@ -29,6 +30,7 @@
         "info": {
             "title": "电力行业解决方案",
             "img": "programs/02.png",
+            "width":"676px",
             "list": [
                 {
                     "title": "业务痛点",
@@ -54,6 +56,7 @@
         "info": {
             "title": "智慧酒店解决方案",
             "img": "programs/03.png",
+            "width":"676px",
             "list": [
                 {
                     "title": "业务痛点",
@@ -80,6 +83,7 @@
         "info": {
             "title": "政务中心解决方案",
             "img": "programs/04.png",
+            "width":"676px",
             "list": [
                 {
                     "title": "业务痛点",

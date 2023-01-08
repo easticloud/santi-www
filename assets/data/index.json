@@ -1,10 +1,10 @@
 {
     "header": [
-        { "name": "首页", "link": "" },
-        { "name": "算法商场", "link": "" },
-        { "name": "核心产品", "link": "" },
-        { "name": "行业方案", "link": "" },
-        { "name": "关于我们", "link": "" }
+        { "name": "首页", "link": "/index" },
+        { "name": "算法商场", "link": "/ai" },
+        { "name": "核心产品", "link": "/server" },
+        { "name": "行业方案", "link": "/programs" },
+        { "name": "关于我们", "link": "/about" }
     ],
     "carousel": [
         {

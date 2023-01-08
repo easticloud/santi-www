@@ -1,6 +1,6 @@
 <template>
     <div class="m-item-programs wp">
-        <img :src="require(`../../static/images/${data.img}`)" class="img" />
+        <img :src="require(`../../static/images/${data.img}`)" class="img" :style="{ width: data.width }" />
         <div class="box">
             <span class="title">{{ data.title }}</span>
             <div class="item" v-for="(item, i) in list" :key="i">
@@ -35,11 +35,10 @@ export default {
     .flex;
     .r(5px);
     .clip;
-    .size(676px,auto);
-    min-height: 635px;
     background-color: #fff;
     .img {
-        .size(676px,635px);
+        .h(auto);
+        flex-shrink: 0;
     }
     .box {
         .flex;

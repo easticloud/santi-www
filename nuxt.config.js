@@ -1,4 +1,4 @@
-import { description, title } from "./settings";
+import { description, title, API } from "./settings";
 export default {
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
@@ -16,8 +16,8 @@ export default {
     },
 
     // Global CSS: https://go.nuxtjs.dev/config-css
-    css: ["element-ui/lib/theme-chalk/index.css", "csslab/reset.css",'@/assets/css/main.less'],
-    buildModules: ["@nuxtjs/style-resources","@nuxtjs/svg"],
+    css: ["element-ui/lib/theme-chalk/index.css", "csslab/reset.css", '@/assets/css/main.less'],
+    buildModules: ["@nuxtjs/style-resources", "@nuxtjs/svg"],
     styleResources: {
         less: ["csslab/base.less", "./assets/css/var.less"],
     },
@@ -29,7 +29,18 @@ export default {
     components: true,
 
     // Modules: https://go.nuxtjs.dev/config-modules
-    modules: [],
+    modules: ["@nuxtjs/axios", "@nuxtjs/proxy"],
+    axios: {
+        proxy: true,
+    },
+    proxy: {
+        "/api/cms": {
+            target: process.env["DEV_SERVER"] == "true" ? "http://localhost:60001" : API.cms,
+            // pathRewrite: {
+            //     "^/api": "/",
+            // },
+        },
+    },
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {

@@ -1,5 +1,5 @@
 {
-  "name": "nuxt2",
+  "name": "santi-www",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -10,6 +10,7 @@
     "ssg": "nuxt generate"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.13.6",
     "axios": "^0.27.2",
     "core-js": "^3.19.3",
     "element-ui": "^2.15.6",
@@ -20,6 +21,7 @@
     "webpack": "^4.46.0"
   },
   "devDependencies": {
+    "@nuxtjs/proxy": "^2.1.0",
     "@nuxtjs/style-resources": "^1.2.1",
     "@nuxtjs/svg": "^0.4.0",
     "csslab": "^4.0.3",
