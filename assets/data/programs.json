@@ -3,7 +3,7 @@
         "title": "数据中心",
         "info": {
             "title": "数据中心解决方案",
-            "img": "programs/01.png",
+            "img": "programs/01.jpg",
             "width":"676px",
             "list": [
                 {
@@ -29,7 +29,7 @@
         "title": "电力行业",
         "info": {
             "title": "电力行业解决方案",
-            "img": "programs/02.png",
+            "img": "programs/02.jpg",
             "width":"676px",
             "list": [
                 {
@@ -55,7 +55,7 @@
         "title": "智慧酒店",
         "info": {
             "title": "智慧酒店解决方案",
-            "img": "programs/03.png",
+            "img": "programs/03.jpg",
             "width":"676px",
             "list": [
                 {
@@ -82,7 +82,7 @@
         "title": "政务中心",
         "info": {
             "title": "政务中心解决方案",
-            "img": "programs/04.png",
+            "img": "programs/04.jpg",
             "width":"676px",
             "list": [
                 {

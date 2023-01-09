@@ -2,7 +2,7 @@
     <div class="c-header">
         <div class="wp">
             <a href="http://" target="_blank" class="logo">
-                <img src="../static/images/index/logo.png" />
+                <img src="../static/images/index/logo.svg" />
             </a>
             <div class="links">
                 <a class="u-link" :href="item.link" target="_blank" v-for="(item, i) in header" :key="i">

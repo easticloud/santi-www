@@ -18,7 +18,9 @@
             <!-- 合作伙伴 -->
             <div class="m-partners">
                 <page-title :data="partnersTitle"></page-title>
-                <a href="/about#contact" target="_blank" class="button">► 立即入驻</a>
+                <a href="/about#contact" target="_blank" class="button">
+                    <img class="arr" src="../static/images/index/arr.svg" /> 立即入驻
+                </a>
                 <div class="icons wp">
                     <img
                         :src="require(`/static/images/index/partners/0${item}.png`)"
@@ -64,5 +66,5 @@ export default {
 </script>
 
 <style lang="less">
-    @import "~@/assets/css/index.less";
+@import "~@/assets/css/index.less";
 </style>

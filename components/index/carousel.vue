@@ -6,7 +6,7 @@
                     <div class="box wp">
                         <span class="title" v-html="item.title"></span>
                         <span class="desc">{{ item.desc }}</span>
-                        <span class="button">► 查看更多</span>
+                        <span class="button"><img class="arr" src="../../static/images/index/arr.svg"> 查看更多</span>
                     </div>
                 </a>
             </el-carousel-item>
