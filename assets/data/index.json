@@ -10,19 +10,19 @@
         {
             "title": "AI算法商城",
             "desc": "打造丰富多样的算力模型，加速行业场景数字化升级",
-            "link": "",
+            "link": "/ai",
             "img": "index/ai.jpg"
         },
         {
             "title": "三体AI边缘计算盒",
             "desc": "最大可支持32路摄像头接入，内置数十种AI算法",
-            "link": "",
+            "link": "/box",
             "img": "index/box.jpg"
         },
         {
             "title": "让科技更简单<br/>让生活更智能",
             "desc": "用突破性的技术，解决社会和商业中的棘手问题",
-            "link": "",
+            "link": "/programs",
             "img": "index/more.jpg"
         }
     ],
@@ -49,25 +49,25 @@
             {
                 "title": "数据中心",
                 "desc": "烟火检测、杂物堆积检测、身份识别（非面部）、安全帽检测、脱岗检测、入侵检测、摔倒检测",
-                "link": "",
+                "link": "/ai#data",
                 "bg": "index/i-bg-01.svg"
             },
             {
                 "title": "电力行业",
                 "desc": "安全帽检测、工装检测、违规行为检测、烟火检测",
-                "link": "",
+                "link": "/ai#power",
                 "bg": "index/i-bg-02.svg"
             },
             {
                 "title": "智慧社区",
                 "desc": "消防通道检测、烟火检测、车辆违停检测、高空抛物检测、攀爬检测",
-                "link": "",
+                "link": "/ai#smart",
                 "bg": "index/i-bg-03.svg"
             },
             {
                 "title": "政务中心",
                 "desc": "佩戴口罩检测、吸烟检测、玩手机检测、工作人员着装检测、跌倒检测、在岗人数检测、脱岗检测",
-                "link": "",
+                "link": "/ai#government",
                 "bg": "index/i-bg-04.svg"
             }
         ]
@@ -80,38 +80,38 @@
     "footer": {
         "contact": {
             "title": "联系我们",
-            "link": "",
+            "link": "/about",
             "desc": ["咨询热线：", "025-82224268", "邮箱：xinhao@025dt.cn", "商务合作：15335159299（辛经理）"]
         },
         "ai": {
             "title": "算法商城",
-            "link": ""
+            "link": "/ai"
         },
         "core": {
             "title": "核心产品",
-            "link": "",
+            "link": "/server",
             "list": [
-                { "title": "三体AI边缘计算盒", "link": "" },
-                { "title": "三体AI边缘计算服务器", "link": "" }
+                { "title": "三体AI边缘计算盒", "link": "/box" },
+                { "title": "三体AI边缘计算服务器", "link": "/server" }
             ]
         },
         "programs": {
             "title": "行业方案",
             "link": "",
             "list": [
-                { "title": "数据中心", "link": "" },
-                { "title": "电力行业", "link": "" },
-                { "title": "智慧酒店", "link": "" },
-                { "title": "政务中心", "link": "" }
+                { "title": "数据中心", "link": "/programs#data" },
+                { "title": "电力行业", "link": "/programs#power" },
+                { "title": "智慧酒店", "link": "/programs#hotel" },
+                { "title": "政务中心", "link": "/programs#government" }
             ]
         },
         "about": {
             "title": "关于我们",
-            "link": "",
+            "link": "/about",
             "list": [
-                { "title": "公司简介", "link": "" },
-                { "title": "渠道合作", "link": "" },
-                { "title": "在线留言", "link": "" }
+                { "title": "公司简介", "link": "/about#info" },
+                { "title": "渠道合作", "link": "/about#cooperation" },
+                { "title": "在线留言", "link": "/about#contact" }
             ]
         },
         "santi": {

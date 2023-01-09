@@ -18,7 +18,7 @@
             <!-- 合作伙伴 -->
             <div class="m-partners">
                 <page-title :data="partnersTitle"></page-title>
-                <a href="http://" target="_blank" class="button">立即入驻</a>
+                <a href="/about#contact" target="_blank" class="button">► 立即入驻</a>
                 <div class="icons wp">
                     <img
                         :src="require(`/static/images/index/partners/0${item}.png`)"
