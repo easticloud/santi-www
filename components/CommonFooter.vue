@@ -1,5 +1,6 @@
 <template>
     <div class="c-footer">
+        <CommonTop />
         <div class="icons">
             <div class="wp">
                 <div class="item" v-for="(item, i) in icon" :key="i">
@@ -56,12 +57,16 @@
 
 <script>
 import { icon, footer } from "@/assets/data/index.json";
+import CommonTop from "./CommonTop.vue";
 export default {
     data() {
         return {
             icon,
             footer,
         };
+    },
+    components: {
+        CommonTop,
     },
     computed: {
         contact() {
