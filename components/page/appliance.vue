@@ -45,4 +45,29 @@ export default {
         }
     }
 }
+@media screen and (max-width: @phone) {
+    .m-item-appliance {
+        flex-direction: column;
+        .h(auto);
+        gap: 20px;
+        padding: 20px;
+        .img {
+            .size(100%,auto);
+        }
+        .box {
+            .title {
+                .fz(16px,24px);
+            }
+            .desc {
+                .mt(10px);
+                .fz(14px,20px);
+            }
+        }
+        &.right {
+            .img {
+                order: 0;
+            }
+        }
+    }
+}
 </style>

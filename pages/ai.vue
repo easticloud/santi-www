@@ -51,13 +51,20 @@ export default {
 </script>
 
 <style lang="less">
-.p-ai {
-    .m-content {
-        .pb(75px);
+.p-ai .m-content {
+    .pb(75px);
+    .wp {
+        .flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: @phone) {
+    .p-ai .m-content {
+        .pb(30px);
         .wp {
-            .flex;
-            flex-wrap: wrap;
-            gap: 20px;
+            justify-content: center;
         }
     }
 }

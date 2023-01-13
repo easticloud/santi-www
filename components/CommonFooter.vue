@@ -20,24 +20,37 @@
                 <div class="item two">
                     <a :href="ai.link" class="title">{{ ai.title }}</a>
                     <a :href="core.link" class="title">{{ core.title }}</a>
-                    <a :href="item.link" class="desc" v-for="(item, i) in core.list" :key="i">{{ item.title }}</a>
+                    <div class="u-item">
+                        <a :href="item.link" class="desc" v-for="(item, i) in core.list" :key="i">{{ item.title }}</a>
+                    </div>
                 </div>
-                <div class="item">
+                <div class="item three">
                     <a :href="programs.link" class="title">{{ programs.title }}</a>
-                    <a :href="item.link" class="desc" v-for="(item, i) in programs.list" :key="i">{{ item.title }}</a>
+                    <div class="u-item">
+                        <a :href="item.link" class="desc" v-for="(item, i) in programs.list" :key="i">{{
+                            item.title
+                        }}</a>
+                    </div>
                 </div>
-                <div class="item">
+                <div class="item four">
                     <a :href="about.link" class="title">{{ about.title }}</a>
-                    <a :href="item.link" class="desc" v-for="(item, i) in about.list" :key="i">{{ item.title }}</a>
+                    <div class="u-item">
+                        <a :href="item.link" class="desc" v-for="(item, i) in about.list" :key="i">{{ item.title }}</a>
+                    </div>
                 </div>
-                <div class="item">
+                <div class="item five">
                     <a :href="santi.link" class="title">{{ santi.title }}</a>
                     <span class="label">{{ santi.label }}</span>
                     <img class="code" src="../static/images/index/code.jpg" />
+                    <div class="more">
+                        <span v-for="item in santi.more" :key="item">{{ item }}</span>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="copyright">© 2022 南京三体数字科技有限公司 丨 苏ICP备15031332号</div>
+        <div class="copyright">
+            <span>© 2022 南京三体数字科技有限公司</span><span class="line"> 丨 </span><span>苏ICP备15031332号</span>
+        </div>
     </div>
 </template>
 

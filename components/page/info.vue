@@ -23,7 +23,7 @@ export default {
     .label {
         .flex;
         .fz(21px,27px);
-        gap:3px;
+        gap: 3px;
         align-items: center;
         .icon {
             .size(25px);
@@ -33,6 +33,24 @@ export default {
     .desc {
         .fz(16px,21px);
         color: #666;
+    }
+}
+@media screen and (max-width: @phone) {
+    .m-item-info {
+        .size(100%,auto);
+        padding: 20px !important;
+        gap: 15px;
+        .label {
+            .flex;
+            .fz(18px,24px); 
+            .icon {
+                .size(22px);
+            }
+        }
+        .desc {
+            .fz(14px,20px);
+            color: #666;
+        }
     }
 }
 </style>

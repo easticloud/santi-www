@@ -17,7 +17,7 @@ export default {
 <style lang="less">
 .m-item-inquiry {
     .flex;
-    gap:35px;
+    gap: 35px;
     .img {
         .size(120px);
     }
@@ -37,6 +37,25 @@ export default {
         .mt(18px);
         .fz(18px,24px);
         .nobreak;
+    }
+}
+@media screen and (max-width: @phone) {
+    .m-item-inquiry {
+        gap: 20px;
+        .img {
+            .size(80px);
+        }
+        .title {
+            .fz(21px,27px);
+        }
+        .desc {
+            .mt(0);
+            .fz(12px,24px);
+        }
+        .phone {
+            .mt(0);
+            .fz(12px,24px);
+        }
     }
 }
 </style>

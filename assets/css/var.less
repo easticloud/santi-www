@@ -1,7 +1,19 @@
 @img: "../../../static/images/";
+@phone: 750px;
 
 .wp {
     .auto(x);
     .w(100%);
     max-width: 1200px;
+}
+.title {
+    .fz(21px,27px);
+}
+
+@media screen and (max-width: @phone) {
+    .wp {
+        max-width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
 }

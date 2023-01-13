@@ -13,10 +13,27 @@
         background-color: #fff;
         .m-item-inquiry {
             width: 530px;
-            box-sizing:border-box;
+            box-sizing: border-box;
             &:last-child {
                 border-left: 1px solid #ddd;
                 .pl(100px);
+            }
+        }
+    }
+}
+@media screen and (max-width: @phone) {
+    .p-about {
+        .inquiry {
+            .h(auto);
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+            .m-item-inquiry {
+                width: 100%;
+                &:last-child {
+                    border-left: 0;
+                    .pl(0);
+                }
             }
         }
     }

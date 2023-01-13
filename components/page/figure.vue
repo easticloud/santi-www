@@ -23,4 +23,11 @@ export default {
     background-position: top center;
     background-color: #fff;
 }
+@media screen and (max-width: @phone) {
+    .m-item-figure {
+        .w(100%);
+        background-size: contain;
+        background-position: center center;
+    }
+}
 </style>

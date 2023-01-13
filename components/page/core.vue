@@ -37,4 +37,9 @@ export default {
         color: #666;
     }
 }
+@media screen and (max-width: @phone) {
+    .m-item-core {
+        .h(auto);
+    }
+}
 </style>

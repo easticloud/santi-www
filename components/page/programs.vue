@@ -82,4 +82,14 @@ export default {
         }
     }
 }
+@media screen and (max-width: @phone) {
+    .m-item-programs {
+        padding: 20px 20px 0 20px !important;
+        flex-direction: column;
+        .img {
+            .h(auto);
+            flex-shrink: 0;
+        }
+    }
+}
 </style>

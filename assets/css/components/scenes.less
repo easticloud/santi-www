@@ -23,3 +23,27 @@
         }
     }
 }
+@media screen and (max-width: @phone) {
+    .m-item-scenes {
+        .h(auto);
+        flex-direction: column;
+        gap: 0;
+        padding: 20px !important;
+        margin: 30px 0;
+        .img {
+            .size(388px,262px);
+        }
+        .scenes-box {
+            .flex;
+            flex-direction: column;
+            .label {
+                .fz(16px,24px);
+                margin: 11px 0 14px 0;
+            }
+            .desc {
+                .fz(12px,24px);
+                color: #666;
+            }
+        }
+    }
+}
