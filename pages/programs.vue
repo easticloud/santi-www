@@ -5,12 +5,14 @@
         <!-- 内容 -->
         <client-only>
             <!-- 轮播 -->
-            <index-carousel></index-carousel>
+            <index-carousel :data="programs.carousel"></index-carousel>
             <!-- tabs -->
             <page-tabs :data="tabs" :active="active" @update="update"></page-tabs>
             <div v-for="(item, key) in programs" :key="key" :id="key">
-                <page-title :data="{ title: item.title }"></page-title>
-                <page-programs :data="item.info"></page-programs>
+                <template v-if="key !== 'carousel'">
+                    <page-title :data="{ title: item.title }"></page-title>
+                    <page-programs :data="item.info"></page-programs>
+                </template>
             </div>
         </client-only>
 
@@ -31,7 +33,9 @@ export default {
     },
     computed: {
         tabs() {
-            return Object.values(this.programs).map((item) => item.title);
+            return Object.values(this.programs)
+                .map((item) => item.title)
+                .filter(Boolean);
         },
     },
     methods: {
@@ -51,7 +55,7 @@ export default {
 </script>
 
 <style lang="less">
-#government{
+#government {
     .pb(75px);
 }
 </style>

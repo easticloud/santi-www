@@ -5,7 +5,7 @@
         <!-- 内容 -->
         <client-only>
             <!-- 轮播 -->
-            <index-carousel></index-carousel>
+            <index-carousel :data="carousel"></index-carousel>
             <!-- ai -->
             <index-ai></index-ai>
             <!-- 行业 -->
@@ -38,13 +38,14 @@
 </template>
 
 <script>
-import { industry, partners } from "@/assets/data/index.json";
+import { carousel, industry, partners } from "@/assets/data/index.json";
 export default {
     name: "IndexPage",
     data() {
         return {
             industry,
             partners,
+            carousel,
         };
     },
     computed: {

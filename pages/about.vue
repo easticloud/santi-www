@@ -5,7 +5,7 @@
         <!-- 内容 -->
         <client-only>
             <!-- 轮播 -->
-            <index-carousel></index-carousel>
+            <index-carousel :data="about.carousel"></index-carousel>
             <!-- tabs -->
             <page-tabs :data="tabs" :active="active" @update="update"></page-tabs>
             <!-- 公司简介 -->
@@ -46,7 +46,7 @@ export default {
     },
     computed: {
         tabs() {
-            return Object.values(this.about).map((item) => item.title);
+            return Object.values(this.about).map((item) => item.title).filter(Boolean);
         },
     },
     methods: {

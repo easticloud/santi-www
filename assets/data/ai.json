@@ -1,4 +1,13 @@
 {
+    "carousel": [
+        {
+            "title": "AI算法商城",
+            "desc": "打造丰富多样的算力模型，加速行业场景数字化升级",
+            "link": "/about#contact",
+            "img": "banner/01.jpg",
+            "button": "申请试用"
+        }
+    ],
     "data": {
         "title": "数据中心",
         "list": [

@@ -5,7 +5,7 @@
         <!-- 内容 -->
         <client-only>
             <!-- 轮播 -->
-            <index-carousel></index-carousel>
+            <index-carousel :data="ai.carousel"></index-carousel>
             <page-tabs :data="tabs" :active="active" @update="update"></page-tabs>
             <div class="m-content" v-for="(item, key) in ai" :key="key" :id="key">
                 <page-title :data="{ title: item.title }"></page-title>
@@ -31,7 +31,7 @@ export default {
     },
     computed: {
         tabs() {
-            return Object.values(this.ai).map((item) => item.title);
+            return Object.values(this.ai).map((item) => item.title).filter(Boolean);
         },
     },
     methods: {

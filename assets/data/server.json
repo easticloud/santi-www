@@ -1,4 +1,13 @@
 {
+    "carousel": [
+        {
+            "title": "三体AI边缘计算服务器",
+            "desc": "最大可支持32路摄像头接入，内置数十种AI算法",
+            "link": "/about#contact",
+            "img": "banner/04.jpg",
+            "button": "申请试用"
+        }
+    ],
     "info": {
         "title": "产品介绍",
         "label": "三体AI边缘计算服务器",

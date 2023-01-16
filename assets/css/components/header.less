@@ -2,6 +2,7 @@
     .pa;
     .size(100%,80px);
     .z(9);
+    background-color: rgba(255, 255, 255, 0.08);
     .wp {
         .flex;
         align-items: center;
@@ -30,6 +31,28 @@
                 .bold;
             }
         }
+        .u-item {
+            .pointer;
+            position: relative;
+            .box {
+                .none;
+                .pa;
+                .ml(-40px);
+                padding: 10px 0;
+                left: 0;
+                background-color: rgba(255, 255, 255, 0.08);
+                .u-link {
+                    .x;
+                    .fz(16px);
+                    .size(180px,42px);
+                }
+            }
+            &:hover {
+                .box {
+                    .db;
+                }
+            }
+        }
     }
     .icon {
         .none;
@@ -55,6 +78,7 @@
 
 @media screen and (max-width: @phone) {
     .c-header {
+        background-color: transparent;
         .wp {
             .size(100%,60px);
             &.show {

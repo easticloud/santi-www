@@ -1,4 +1,13 @@
 {
+    "carousel": [
+        {
+            "title": "快速识别·智能体验·助企腾飞",
+            "desc": "坚持创新，让 AI 引领人类进步",
+            "link": "/about#contact",
+            "img": "banner/05.jpg",
+            "button": "联系我们"
+        }
+    ],
     "info": {
         "title": "公司简介",
         "info": {

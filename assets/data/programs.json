@@ -1,4 +1,13 @@
 {
+    "carousel": [
+        {
+            "title": "让科技更简单<br/>让生活更智能",
+            "desc": "用突破性的技术，解决社会和商业中的棘手问题",
+            "link": "/about#contact",
+            "img": "banner/02.jpg",
+            "button": "联系我们"
+        }
+    ],
     "data": {
         "title": "数据中心",
         "info": {

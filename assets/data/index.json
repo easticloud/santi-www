@@ -2,7 +2,13 @@
     "header": [
         { "name": "首页", "link": "/" },
         { "name": "算法商场", "link": "/ai" },
-        { "name": "核心产品", "link": "/server" },
+        {
+            "name": "核心产品",
+            "list": [
+                { "name": "AI边缘计算盒", "link": "/box" },
+                { "name": "AI边缘计算服务器", "link": "/server" }
+            ]
+        },
         { "name": "行业方案", "link": "/programs" },
         { "name": "关于我们", "link": "/about" }
     ],
@@ -10,20 +16,23 @@
         {
             "title": "AI算法商城",
             "desc": "打造丰富多样的算力模型，加速行业场景数字化升级",
-            "link": "/ai",
-            "img": "index/ai.jpg"
-        },
-        {
-            "title": "三体AI边缘计算盒",
-            "desc": "最大可支持32路摄像头接入，内置数十种AI算法",
-            "link": "/box",
-            "img": "index/box.jpg"
+            "link": "/about#contact",
+            "img": "banner/01.jpg",
+            "button": "申请试用"
         },
         {
             "title": "让科技更简单<br/>让生活更智能",
             "desc": "用突破性的技术，解决社会和商业中的棘手问题",
-            "link": "/programs",
-            "img": "index/more.jpg"
+            "link": "/about#contact",
+            "img": "banner/02.jpg",
+            "button": "联系我们"
+        },
+        {
+            "title": "三体AI边缘计算盒",
+            "desc": "最大可支持32路摄像头接入，内置数十种AI算法",
+            "link": "/about#contact",
+            "img": "banner/03.jpg",
+            "button": "申请试用"
         }
     ],
     "ai": {
