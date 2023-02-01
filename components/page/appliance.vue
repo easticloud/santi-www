@@ -1,13 +1,13 @@
 <template>
     <div class="m-item-appliance" :class="data.direction" @mouseover="mouseover" @mouseout="mouseout">
-        <div class="img">
+        <div class="img wow animate__zoomIn">
             <img
                 class="p-animation-0"
                 :src="require(`../../static/images/${data.bg}`)"
                 :class="{ scale, scale_move }"
             />
         </div>
-        <div class="box">
+        <div class="box wow animate__zoomIn">
             <span class="title">{{ data.label }}</span>
             <span class="desc">{{ data.desc }}</span>
         </div>
@@ -31,6 +31,11 @@ export default {
             this.scale = false;
             this.scale_move = true;
         },
+    },
+    mounted() {
+        this.$nextTick(() => {
+            if (process.browser) new WOW({ animateClass: "animate__animated" }).init();
+        });
     },
 };
 </script>

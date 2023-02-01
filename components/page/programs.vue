@@ -2,16 +2,16 @@
     <div class="m-item-programs wp" @mouseover="mouseover" @mouseout="mouseout">
         <div class="img">
             <img
-                class="p-animation-0"
+                class="p-animation-0 wow animate__fadeInLeft"
                 :class="{ scale, scale_move }"
                 :src="require(`../../static/images/${data.img}`)"
                 :style="{ width: data.width }"
             />
         </div>
 
-        <div class="box">
-            <span class="title">{{ data.title }}</span>
-            <div class="item" v-for="(item, i) in list" :key="i">
+        <div class="box wow animate__fadeInRight">
+            <span class="title wow animate__slideInUp">{{ data.title }}</span>
+            <div class="item wow animate__slideInUp" v-for="(item, i) in list" :key="i">
                 <div class="label">
                     <img src="../../static/images/programs/icon.svg" class="icon" />
                     {{ item.title }}
@@ -50,6 +50,11 @@ export default {
         list() {
             return this.data.list || [];
         },
+    },
+    mounted() {
+        this.$nextTick(() => {
+            if (process.browser) new WOW({ animateClass: "animate__animated" }).init();
+        });
     },
 };
 </script>
