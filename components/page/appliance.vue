@@ -1,6 +1,12 @@
 <template>
-    <div class="m-item-appliance" :class="data.direction">
-        <img :src="require(`../../static/images/${data.bg}`)" class="img" />
+    <div class="m-item-appliance" :class="data.direction" @mouseover="mouseover" @mouseout="mouseout">
+        <div class="img">
+            <img
+                class="p-animation-0"
+                :src="require(`../../static/images/${data.bg}`)"
+                :class="{ scale, scale_move }"
+            />
+        </div>
         <div class="box">
             <span class="title">{{ data.label }}</span>
             <span class="desc">{{ data.desc }}</span>
@@ -10,8 +16,22 @@
 <script>
 export default {
     props: ["data"],
-
-    methods: {},
+    data() {
+        return {
+            scale: false,
+            scale_move: false,
+        };
+    },
+    methods: {
+        mouseover() {
+            this.scale = true;
+            this.scale_move = false;
+        },
+        mouseout() {
+            this.scale = false;
+            this.scale_move = true;
+        },
+    },
 };
 </script>
 
@@ -26,6 +46,11 @@ export default {
     background-color: #fff;
     .img {
         .size(388px,190px);
+        .clip;
+        flex-shrink: 0;
+        img {
+            .full;
+        }
     }
     .box {
         .flex;

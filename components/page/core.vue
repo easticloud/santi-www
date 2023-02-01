@@ -30,11 +30,15 @@ export default {
         gap: 20px;
         .icon {
             .size(45px);
+            transition: all 0.6s;
         }
     }
     .desc {
         .fz(16px,21px);
         color: #666;
+    }
+    &:hover .title .icon {
+        transform: rotateY(180deg);
     }
 }
 @media screen and (max-width: @phone) {

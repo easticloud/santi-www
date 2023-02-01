@@ -10,10 +10,10 @@
             <page-tabs :data="tabs" :active="active" @update="update"></page-tabs>
             <!-- 产品介绍 -->
             <div v-for="(item, key) in server" :key="key" :id="key">
-                <page-title :data="{ title: item.title }"></page-title>
+                <page-title class="wow animate__zoomIn"  v-if="item.title" :data="{ title: item.title }"></page-title>
 
                 <template v-if="item.list">
-                    <div class="m-content wp">
+                    <div class="m-content wp wow animate__slideInUp">
                         <component
                             :is="showModal(key)"
                             v-for="(_item, i) in item.list"
@@ -68,6 +68,9 @@ export default {
     },
     mounted() {
         this.active = this.tabs[0];
+        this.$nextTick(() => {
+            if (process.browser) new WOW({ animateClass: "animate__animated" }).init();
+        });
     },
 };
 </script>

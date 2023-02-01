@@ -16,14 +16,14 @@ export default {
     },
 
     // Global CSS: https://go.nuxtjs.dev/config-css
-    css: ["element-ui/lib/theme-chalk/index.css", "csslab/reset.css", '@/assets/css/main.less'],
+    css: ["element-ui/lib/theme-chalk/index.css", "csslab/reset.css", '@/assets/css/main.less','@/assets/css/animation.less'],
     buildModules: ["@nuxtjs/style-resources", "@nuxtjs/svg"],
     styleResources: {
         less: ["csslab/base.less", "./assets/css/var.less"],
     },
 
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-    plugins: ["@/plugins/element-ui"],
+    plugins: ["@/plugins/element-ui", { src: '@/plugins/wow.js', ssr: false }],
 
     // Auto import components: https://go.nuxtjs.dev/config-components
     components: true,

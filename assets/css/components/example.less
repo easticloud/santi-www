@@ -1,16 +1,27 @@
 .m-item-example {
     .flex;
     .size(285px,185px);
-    padding: 28px;
-    flex-direction: column;
-    box-sizing: border-box;
-    color: #fff;
+    .clip;
+    .r(6px);  
+    position: relative;
+    .m-box {
+        .full;
+        .pa; 
+        .lt(0);
+        padding: 28px;
+        box-sizing: border-box;
+        flex-direction: column;
+        color: #fff;
+    }
+    .m-content {
+        .z(1);
+    }
     .img {
         .size(50px);
     }
     .title {
         .mt(12px);
-    } 
+    }
     .buttons {
         .flex;
         .mt(18px);
@@ -22,7 +33,6 @@
             .r(13px);
             background: rgba(216, 216, 216, 0.1);
             border: 1px solid #979797;
-    
         }
     }
 }

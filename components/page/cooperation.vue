@@ -24,6 +24,10 @@ export default {
     gap: 15px;
     .icon {
         .size(65px);
+        transition: all 0.6s;
+    }
+    &:hover .icon {
+        transform: rotateY(180deg);
     }
     .title {
         .fz(21px,27px);

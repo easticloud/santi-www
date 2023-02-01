@@ -8,11 +8,15 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-end;
+
         .item {
             .flex;
             gap: 20px;
             align-items: center;
             justify-content: center;
+            &:hover .icon {
+                transform: rotateY(180deg);
+            }
         }
         .item + .item {
             .mt(190px);
@@ -22,7 +26,9 @@
         }
         .icon {
             .size(51px);
+            transition: all 0.6s;
         }
+
         &.box-1 {
             .item:first-child {
                 .mr(20px);
@@ -69,11 +75,15 @@
             align-items: center;
             justify-content: center;
             gap: 25px;
+            &:hover .icon {
+                transform: rotateY(180deg);
+            }
             .name {
                 .fz(24px,31px);
             }
             .icon {
                 .size(85px);
+                transition: all 0.6s;
             }
         }
     }

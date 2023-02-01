@@ -4,8 +4,12 @@
             <el-carousel-item v-for="(item, i) in data" :key="i">
                 <a :href="item.link" target="_blank" class="u-link" :style="style(item.img)">
                     <div class="box wp">
-                        <span class="title" v-html="item.title"></span>
-                        <span class="desc">{{ item.desc }}</span>
+                        <span
+                            class="title"
+                            :class="active == i ? 'p-animation fadeInUp' : ''"
+                            v-html="item.title"
+                        ></span>
+                        <span class="desc" :class="active == i ? 'p-animation-1 fadeInUp' : ''">{{ item.desc }}</span>
                         <span class="button">
                             <img class="arr" src="../../static/images/index/arr.svg" /> {{ item.button }}
                         </span>
@@ -18,8 +22,15 @@
 <script>
 export default {
     props: ["data"],
+    data() {
+        return {
+            active: "",
+        };
+    },
     methods: {
-        changeHandle() {},
+        changeHandle(e) {
+            this.active = e;
+        },
         style(link) {
             return {
                 backgroundImage: `url(${require(`../../static/images/${link}`)})`,

@@ -1,6 +1,12 @@
 <template>
-    <div class="m-item-inquiry">
-        <img class="img" :src="require(`../../static/images/${data.img}`)" />
+    <div class="m-item-inquiry" @mouseover="mouseover" @mouseout="mouseout">
+        <div class="img">
+            <img
+                class="p-animation-0"
+                :class="{ scale, scale_move }"
+                :src="require(`../../static/images/${data.img}`)"
+            />
+        </div>
         <div class="box">
             <span class="title">{{ data.title }}</span>
             <span class="desc">{{ data.desc }}</span>
@@ -11,6 +17,22 @@
 <script>
 export default {
     props: ["data"],
+    data() {
+        return {
+            scale: false,
+            scale_move: false,
+        };
+    },
+    methods: {
+        mouseover() {
+            this.scale = true;
+            this.scale_move = false;
+        },
+        mouseout() {
+            this.scale = false;
+            this.scale_move = true;
+        },
+    },
 };
 </script>
 
@@ -20,6 +42,11 @@ export default {
     gap: 35px;
     .img {
         .size(120px);
+        .clip;
+        flex-shrink: 0;
+        img {
+            .full;
+        }
     }
     .box {
         .flex;

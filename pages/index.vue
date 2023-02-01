@@ -10,7 +10,7 @@
             <index-ai></index-ai>
             <!-- 行业 -->
             <div class="m-industry">
-                <page-title :data="industryTitle"></page-title>
+                <page-title  :data="industryTitle"></page-title>
                 <div class="wp">
                     <index-industry v-for="(item, i) in industry.list" :key="i" :data="item"></index-industry>
                 </div>
@@ -18,7 +18,7 @@
             <!-- 合作伙伴 -->
             <div class="m-partners">
                 <page-title :data="partnersTitle"></page-title>
-                <a href="/about#contact" target="_blank" class="button">
+                <a href="/about#contact" target="_blank" class="button wow animate__slideInUp">
                     <img class="arr" src="../static/images/index/arr.svg" /> 立即入驻
                 </a>
                 <div class="icons wp">
@@ -62,7 +62,6 @@ export default {
             };
         },
     },
-    methods: {},
 };
 </script>
 

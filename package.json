@@ -27,6 +27,7 @@
     "csslab": "^4.0.3",
     "less": "^3.0.4",
     "less-loader": "^5.0.0",
-    "vue-svg-inline-loader": "^1.4.6"
+    "vue-svg-inline-loader": "^1.4.6",
+    "wowjs": "^1.1.3"
   }
 }

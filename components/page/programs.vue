@@ -1,6 +1,14 @@
 <template>
-    <div class="m-item-programs wp">
-        <img :src="require(`../../static/images/${data.img}`)" class="img" :style="{ width: data.width }" />
+    <div class="m-item-programs wp" @mouseover="mouseover" @mouseout="mouseout">
+        <div class="img">
+            <img
+                class="p-animation-0"
+                :class="{ scale, scale_move }"
+                :src="require(`../../static/images/${data.img}`)"
+                :style="{ width: data.width }"
+            />
+        </div>
+
         <div class="box">
             <span class="title">{{ data.title }}</span>
             <div class="item" v-for="(item, i) in list" :key="i">
@@ -22,6 +30,22 @@
 <script>
 export default {
     props: ["data"],
+    data() {
+        return {
+            scale: false,
+            scale_move: false,
+        };
+    },
+    methods: {
+        mouseover() {
+            this.scale = true;
+            this.scale_move = false;
+        },
+        mouseout() {
+            this.scale = false;
+            this.scale_move = true;
+        },
+    },
     computed: {
         list() {
             return this.data.list || [];
@@ -38,7 +62,11 @@ export default {
     background-color: #fff;
     .img {
         .h(auto);
+        .clip;
         flex-shrink: 0;
+        img {
+            .full;
+        }
     }
     .box {
         .flex;

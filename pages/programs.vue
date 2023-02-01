@@ -10,8 +10,12 @@
             <page-tabs :data="tabs" :active="active" @update="update"></page-tabs>
             <div v-for="(item, key) in programs" :key="key" :id="key">
                 <template v-if="key !== 'carousel'">
-                    <page-title :data="{ title: item.title }"></page-title>
-                    <page-programs :data="item.info"></page-programs>
+                    <page-title
+                        class="wow animate__zoomIn"
+                        v-if="item.title"
+                        :data="{ title: item.title }"
+                    ></page-title>
+                    <page-programs class="wow animate__slideInUp" :data="item.info"></page-programs>
                 </template>
             </div>
         </client-only>
@@ -50,6 +54,9 @@ export default {
     },
     mounted() {
         this.active = this.tabs[0];
+        this.$nextTick(() => {
+            if (process.browser) new WOW({ animateClass: "animate__animated" }).init();
+        });
     },
 };
 </script>

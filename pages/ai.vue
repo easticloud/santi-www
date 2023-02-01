@@ -7,9 +7,14 @@
             <!-- 轮播 -->
             <index-carousel :data="ai.carousel"></index-carousel>
             <page-tabs :data="tabs" :active="active" @update="update"></page-tabs>
-            <div class="m-content" v-for="(item, key) in ai" :key="key" :id="key">
-                <page-title :data="{ title: item.title }"></page-title>
-                <div class="wp">
+            <div
+                class="m-content" 
+                v-for="(item, key) in aiList"
+                :key="key"
+                :id="key"
+            >
+                <page-title class="wow animate__zoomIn" :data="{ title: item.title }"></page-title>
+                <div class="wp wow animate__slideInUp">
                     <page-example v-for="(example, i) in item.list" :key="i" :data="example"></page-example>
                 </div>
             </div>
@@ -30,22 +35,28 @@ export default {
         };
     },
     computed: {
+        aiList() {
+            return Object.values(this.ai).filter((item) => item.title);
+        },
         tabs() {
-            return Object.values(this.ai).map((item) => item.title).filter(Boolean);
+            return Object.values(this.aiList).map((item) => item.title);
         },
     },
     methods: {
         update(name) {
             this.active = name;
             let _name = "";
-            for (const key in this.ai) {
-                if (this.ai[key].title == name) _name = key;
+            for (const key in this.aiList) {
+                if (this.aiList[key].title == name) _name = key;
             }
             document.getElementById(_name).scrollIntoView();
         },
     },
     mounted() {
         this.active = this.tabs[0];
+        this.$nextTick(() => {
+            if (process.browser) new WOW({ animateClass: "animate__animated" }).init();
+        });
     },
 };
 </script>

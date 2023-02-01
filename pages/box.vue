@@ -10,14 +10,14 @@
             <page-tabs :data="tabs" :active="active" @update="update"></page-tabs>
             <!-- 产品介绍 -->
             <div v-for="(item, key) in box" :key="key" :id="key">
-                <page-title :data="{ title: item.title }"></page-title>
+                <page-title class="wow animate__zoomIn" v-if="item.title" :data="{ title: item.title }"></page-title>
                 <template v-if="key == 'scenes'">
                     <page-tabs :data="scenesTabs" :active="scenes" @update="showItem" :background="true"></page-tabs>
                     <page-scenes :data="scenesItem"></page-scenes>
                 </template>
                 <template v-else>
                     <template v-if="item.list">
-                        <div class="m-content wp">
+                        <div class="m-content wp wow animate__slideInUp">
                             <component
                                 :is="showModal(key)"
                                 v-for="(_item, i) in item.list"
@@ -49,10 +49,12 @@ export default {
     },
     computed: {
         tabs() {
-            return Object.values(this.box).map((item) => item.title).filter(Boolean);
+            return Object.values(this.box)
+                .map((item) => item.title)
+                .filter(Boolean);
         },
         scenesTabs() {
-            return this.box.scenes.list.map((item) => item.title)
+            return this.box.scenes.list.map((item) => item.title);
         },
         scenesItem() {
             return this.box.scenes.list.filter((item) => item.title == this.scenes)[0];
@@ -84,7 +86,9 @@ export default {
     mounted() {
         this.active = this.tabs[0];
         this.scenes = this.scenesTabs[0];
-        console.log(this.scenesTabs)
+        this.$nextTick(() => {
+            if (process.browser) new WOW({ animateClass: "animate__animated" }).init();
+        });
     },
 };
 </script>
@@ -94,7 +98,7 @@ export default {
     .m-content {
         .flex;
         flex-wrap: wrap;
-        gap: 20px; 
+        gap: 20px;
     }
 }
 </style>

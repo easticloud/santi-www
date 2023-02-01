@@ -10,9 +10,9 @@
             <page-tabs :data="tabs" :active="active" @update="update"></page-tabs>
             <!-- 公司简介 -->
             <div v-for="(item, key) in about" :key="key" :id="key">
-                <page-title :data="{ title: item.title }"></page-title>
+                <page-title class="wow animate__zoomIn" v-if="item.title" :data="{ title: item.title }"></page-title>
                 <template v-if="item.list">
-                    <div class="m-content wp" :class="key">
+                    <div class="m-content wp wow animate__slideInUp" :class="key">
                         <component
                             :is="showModal(key)"
                             v-for="(_item, i) in item.list"
@@ -22,7 +22,7 @@
                     </div>
                 </template>
                 <template v-else>
-                    <component :is="showModal(key)" :data="item.info"></component>
+                    <component class="wow animate__slideInUp" :is="showModal(key)" :data="item.info"></component>
                 </template>
             </div>
 
@@ -46,7 +46,9 @@ export default {
     },
     computed: {
         tabs() {
-            return Object.values(this.about).map((item) => item.title).filter(Boolean);
+            return Object.values(this.about)
+                .map((item) => item.title)
+                .filter(Boolean);
         },
     },
     methods: {
@@ -70,10 +72,13 @@ export default {
     },
     mounted() {
         this.active = this.tabs[0];
+        this.$nextTick(() => {
+            if (process.browser) new WOW({ animateClass: "animate__animated" }).init();
+        });
     },
 };
 </script>
 
 <style lang="less">
-    @import "~@/assets/css/about.less";
+@import "~@/assets/css/about.less";
 </style>
