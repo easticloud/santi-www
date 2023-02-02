@@ -49,9 +49,9 @@
                 </div>
             </div>
         </div>
-        <div class="copyright">
-            <span>© 2022 南京三体数字科技有限公司</span><span class="line"> 丨 </span><span>苏ICP备15031332号</span>
-        </div>
+        <a href="https://beian.miit.gov.cn" target="_blank" class="copyright"> 
+            <span>© 2022 南京三体数字科技有限公司</span><span class="line"> 丨 </span><span>苏ICP备2023002541号</span>
+        </a>
     </div>
 </template>
 
