@@ -7,14 +7,9 @@
             <!-- 轮播 -->
             <index-carousel :data="ai.carousel"></index-carousel>
             <page-tabs :data="tabs" :active="active" @update="update"></page-tabs>
-            <div
-                class="m-content" 
-                v-for="(item, key) in aiList"
-                :key="key"
-                :id="key"
-            >
+            <div class="m-content" v-for="(item, key) in aiList" :key="key" :id="key">
                 <page-title class="wow animate__zoomIn" :data="{ title: item.title }"></page-title>
-                <div class="wp wow animate__slideInUp">
+                <div class="wp wow animate__fadeInUp">
                     <page-example v-for="(example, i) in item.list" :key="i" :data="example"></page-example>
                 </div>
             </div>

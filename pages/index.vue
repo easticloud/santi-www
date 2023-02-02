@@ -10,18 +10,19 @@
             <index-ai></index-ai>
             <!-- 行业 -->
             <div class="m-industry">
-                <page-title  :data="industryTitle"></page-title>
-                <div class="wp">
+                <page-title class="wow animate__fadeInUp" :data="industryTitle"></page-title>
+                <div class="wp wow animate__fadeInUp">
                     <index-industry v-for="(item, i) in industry.list" :key="i" :data="item"></index-industry>
                 </div>
             </div>
+            <div class="m-wave"></div>
             <!-- 合作伙伴 -->
             <div class="m-partners">
-                <page-title :data="partnersTitle"></page-title>
-                <a href="/about#contact" target="_blank" class="button wow animate__slideInUp">
+                <page-title class="wow animate__fadeInUp" :data="partnersTitle"></page-title>
+                <a href="/about#contact" target="_blank" class="button wow animate__fadeInUp">
                     <img class="arr" src="../static/images/index/arr.svg" /> 立即入驻
                 </a>
-                <div class="icons wp">
+                <div class="icons wp wow animate__fadeInUp">
                     <img
                         :src="require(`/static/images/index/partners/0${item}.png`)"
                         class="u-icon"
@@ -61,6 +62,13 @@ export default {
                 desc: this.partners.desc,
             };
         },
+    },
+    mounted() {
+        this.$nextTick(() => {
+            if (process.browser) {
+                new WOW({ animateClass: "animate__animated" }).init();
+            }
+        });
     },
 };
 </script>

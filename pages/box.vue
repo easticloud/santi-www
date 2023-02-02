@@ -17,7 +17,7 @@
                 </template>
                 <template v-else>
                     <template v-if="item.list">
-                        <div class="m-content wp wow animate__slideInUp">
+                        <div class="m-content wp wow animate__fadeInUp">
                             <component
                                 :is="showModal(key)"
                                 v-for="(_item, i) in item.list"

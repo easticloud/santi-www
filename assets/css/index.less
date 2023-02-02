@@ -5,6 +5,23 @@
         gap: 20px;
     }
 }
+.m-wave {
+    .size(100%,45px);
+    animation: wave 20s linear infinite forwards;
+    background-position-y: top;
+    background: url(../../static/images/index/wave.svg) center top;
+}
+@keyframes wave {
+    0% {
+        background-position-x: 0;
+    }
+    50% {
+        background-position-x: 1920px;
+    }
+    100% {
+        background-position-x: 0;
+    }
+}
 .m-partners {
     .pb(75px);
     background: url(../../static/images/index/bg.png) center top #0e1738 no-repeat;

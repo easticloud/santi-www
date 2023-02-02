@@ -15,7 +15,7 @@
                         v-if="item.title"
                         :data="{ title: item.title }"
                     ></page-title>
-                    <page-programs class="wow animate__slideInUp" :data="item.info"></page-programs>
+                    <page-programs class="wow animate__fadeInUp" :data="item.info"></page-programs>
                 </template>
             </div>
         </client-only>

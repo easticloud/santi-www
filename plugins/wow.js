@@ -6,7 +6,5 @@ new WOW({
     animateClass: 'animate__animated',
     offset: 0,
     mobile: true,
-    live: true,
-    callback: null,
-    scrollContainer: null,
+    live: false,
 }).init()

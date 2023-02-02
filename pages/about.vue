@@ -12,7 +12,7 @@
             <div v-for="(item, key) in about" :key="key" :id="key">
                 <page-title class="wow animate__zoomIn" v-if="item.title" :data="{ title: item.title }"></page-title>
                 <template v-if="item.list">
-                    <div class="m-content wp wow animate__slideInUp" :class="key">
+                    <div class="m-content wp wow animate__fadeInUp" :class="key">
                         <component
                             :is="showModal(key)"
                             v-for="(_item, i) in item.list"
@@ -22,7 +22,7 @@
                     </div>
                 </template>
                 <template v-else>
-                    <component class="wow animate__slideInUp" :is="showModal(key)" :data="item.info"></component>
+                    <component class="wow animate__fadeInUp" :is="showModal(key)" :data="item.info"></component>
                 </template>
             </div>
 

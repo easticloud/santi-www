@@ -10,8 +10,8 @@
         </div>
 
         <div class="box wow animate__fadeInRight">
-            <span class="title wow animate__slideInUp">{{ data.title }}</span>
-            <div class="item wow animate__slideInUp" v-for="(item, i) in list" :key="i">
+            <span class="title wow animate__fadeInUp">{{ data.title }}</span>
+            <div class="item wow animate__fadeInUp" v-for="(item, i) in list" :key="i">
                 <div class="label">
                     <img src="../../static/images/programs/icon.svg" class="icon" />
                     {{ item.title }}
