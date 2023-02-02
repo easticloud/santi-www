@@ -63,7 +63,7 @@ export default {
             };
         },
     },
-    mounted() {
+    updated() {
         this.$nextTick(() => {
             if (process.browser) {
                 new WOW({ animateClass: "animate__animated" }).init();
