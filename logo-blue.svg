@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 800">
+    <defs>
+        <style>
+            .cls-1 {
+                fill: url(#fill);
+            }
+        </style>
+        <linearGradient id="fill" x1="255.22" y1="187.6" x2="588.58" y2="520.96" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#b381f7" />
+            <stop offset="0.29" stop-color="#a179f7" />
+            <stop offset="0.33" stop-color="#9e78f7" />
+            <stop offset="1" stop-color="#615ef6" />
+        </linearGradient>
+    </defs> 
+    <path class="cls-1"
+        d="M638.92,473.38c0,128-104.09,232-232,232s-232-104.08-232-232a67.62,67.62,0,1,1,135.23,0A96.81,96.81,0,1,0,431.94,379.9l89.12-108.39C591.38,311.36,638.92,386.92,638.92,473.38ZM393,94.63v.14h-7.22v45h-45v-45h-45.1v45.1h45.1v90.07H393V376L591,135.24l33.38-40.47v-.14Zm-142.26.14H160.67V185h45V140h45v45h-45v45h90.07V139.87h-45ZM616.87,229.66H596.13V208.93H575.4v20.73H554.67V250.4H575.4v20.73h20.73V250.4h20.74Z" />
+</svg>
