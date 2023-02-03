@@ -12,7 +12,7 @@ export default {
             { hid: "description", name: "description", content: description },
             { name: "format-detection", content: "telephone=no" },
         ],
-        link: [{ rel: "icon", type: "image/x-icon", href: "/santi.ico" }],
+        link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
     },
 
     // Global CSS: https://go.nuxtjs.dev/config-css
