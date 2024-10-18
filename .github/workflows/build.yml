@@ -30,10 +30,21 @@ jobs:
             CLEAN: true
             # CLEAN_EXCLUDE: '["css", "js"]'
 
-        - name: OSS
-          uses: manyuanrong/setup-ossutil@v2.0
+        - name: Deploy to Server # 部署到服务器
+          uses: appleboy/ssh-action@master
           with:
-            endpoint: "oss-cn-hangzhou.aliyuncs.com"
-            access-key-id: ${{secrets.AccessKey_ID}}
-            access-key-secret: ${{secrets.Access_Key_Secret}}
-        - run: ossutil cp -rf dist oss://santi-www
+            host: ${{ secrets.HOST_NANJING2 }} # 下面三个配置与上一步类似
+            username: ${{ secrets.DEPLOY_USER }}
+            key: ${{ secrets.DEPLOY_KEY }}
+            # 重启的脚本，根据自身情况做相应改动，一般要做的是migrate数据库以及重启服务器
+            script: |
+                cd /www/wwwroot/dongyun/easticloud-www
+                git pull origin dist
+
+        # - name: OSS
+        #   uses: manyuanrong/setup-ossutil@v2.0
+        #   with:
+        #     endpoint: "oss-cn-hangzhou.aliyuncs.com"
+        #     access-key-id: ${{secrets.AccessKey_ID}}
+        #     access-key-secret: ${{secrets.Access_Key_Secret}}
+        # - run: ossutil cp -rf dist oss://santi-www
