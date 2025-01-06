@@ -1,5 +1,5 @@
-import { __cdn } from "../settings";
+import { __img } from "../settings";
 
 export function getKV(name){
-    return __cdn + 'image/kv/' + name;
+    return __img + 'kv/' + name;
 }
